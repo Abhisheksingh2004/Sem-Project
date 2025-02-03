@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Build Something!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">
+            Pet Feeder Machine
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <a href="#about">About</a>
+            <a href="./Controls/controlPanel.html">Controls</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="./Controls/controlPanel.html">Controls</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="login-button">
+            <a href="./login/login.html">Log In</a>
+        </div>
+    </nav>
+    
+    <main>
+        <h3>Pet Feeder Machine</h3>
+        <h1>Because Every Meal Matters</h1>
+        <p class="subtitle">Designed with Love, Built for Pets</p>
+        <a href="./Controls/controlPanel.html" class="control-btn">Controls Panel</a>
+    </main>
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="33e4e93b-7317-4517-aa82-66f2823faf11">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

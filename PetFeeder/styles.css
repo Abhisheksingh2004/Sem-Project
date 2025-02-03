@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg,rgb(3, 37, 87),rgb(1, 4, 27)) ;
+    height: 200vh;
+    color: white;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar.scrolled {
+    background: #f9f9f927;
+  }
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;  
+    z-index: 1000;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.login-button a {
+    text-decoration: none;
+    color: #1a1a2e;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.login-button a:hover {
+    background-color:#24a0ed;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.control-btn {
+    background-color: #8a2be2;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    display: inline-block;
+    transition: background-color 0.5s;
+}
+
+.control-btn:hover{
+    background-color:#4AD8A5;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1a1a2e;
+    padding: 80px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+/* Contact Us */
+.contact-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #18469b;
+    text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(35deg, #0059ff, rgb(97, 243, 206));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background: #ff0026;
+  }
+  
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; 
+    }
+    
+    .nav-links {
+        display: none; 
+    }
+    
+    nav {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .phone {
+        width: 220px;
+        height: 400px;
+    }
+    
+    .decorative-elements {
+        transform: scale(0.8);
+    }
+} 
+
+
+
+
+
