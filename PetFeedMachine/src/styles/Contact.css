@@ -1,0 +1,157 @@
+/* Contact page styles */
+.contact-container {
+  padding: 40px 0;
+}
+
+.contact-title {
+  color: #001a42;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-title {
+  color: #001a42;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f2dede;
+  color: #a94442;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  text-align: center;
+  padding: 30px 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #7747e3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 20px;
+}
+
+.info-title {
+  color: #001a42;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  color: #666;
+}
+
+.info-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.info-link:hover .info-text {
+  color: #7747e3;
+  text-decoration: underline;
+}
+
+.honeypot {
+  display: none;
+}
+
+/* Form styles previously in styled-components */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.contact-form-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form-textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 150px;
+  resize: vertical;
+  width: 100%;
+}
+
+.contact-submit-button {
+  background-color: #7747e3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-submit-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.contact-submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Hide honeypot field */
+.honeypot {
+  display: none;
+} 
