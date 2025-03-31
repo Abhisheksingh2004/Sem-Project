@@ -1,0 +1,43 @@
+/* Shop page styles */
+.shop-container {
+  padding: 40px 0;
+}
+
+.shop-title {
+  color: #001a42;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.product-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.product-details {
+  padding: 0 15px 15px;
+}
+
+.product-title {
+  font-size: 20px;
+}
+
+.product-price {
+  color: #7747e3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-description {
+  color: #666;
+  margin-bottom: 15px;
+} 
