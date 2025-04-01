@@ -1,0 +1,13 @@
+To fully support all devices, create the following icon files using your paw print design:
+
+1. apple-touch-icon.png (180x180px) - For iOS home screen icons
+2. icon-192.png (192x192px) - For Android home screen icons
+3. icon-512.png (512x512px) - For PWA splash screens
+
+These should match your favicon design but at larger sizes.
+
+You can create these using any image editor or an online favicon generator service like:
+- https://realfavicongenerator.net/ 
+- https://favicon.io/
+
+Use your current paw print SVG as the source, and they'll generate all the necessary sizes. 

@@ -1,0 +1,147 @@
+/* Responsive CSS for Pet Feeder Machine */
+
+/* Base responsive settings */
+:root {
+  --container-max-width: 1200px;
+  --container-padding: 1rem;
+  --grid-gap: 1.5rem;
+  --border-radius: 8px;
+}
+
+/* Container width control */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  box-sizing: border-box;
+}
+
+/* Responsive grid system */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive text */
+html {
+  font-size: 16px;
+}
+
+/* Responsive form elements */
+input, select, textarea, button {
+  max-width: 100%;
+}
+
+/* Touch-friendly interactive elements */
+button, .button, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Media Queries for different device sizes */
+
+/* Mobile phones (small) */
+@media (max-width: 575px) {
+  html {
+    font-size: 14px;
+  }
+  
+  :root {
+    --container-padding: 0.75rem;
+    --grid-gap: 1rem;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  /* Single column for most grid items */
+  .grid > * {
+    grid-column: span 4;
+  }
+}
+
+/* Mobile phones (large) and small tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+  :root {
+    --container-padding: 1rem;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  /* Two column for many grid items */
+  .grid > * {
+    grid-column: span 3;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  :root {
+    --container-padding: 1.5rem;
+    --grid-gap: 2rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+  }
+  
+  /* You can implement dark mode colors here */
+}
+
+/* Accessibility - reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} 

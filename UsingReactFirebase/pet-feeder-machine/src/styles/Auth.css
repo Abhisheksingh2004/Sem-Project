@@ -1,0 +1,53 @@
+/* Auth pages styles (Login/SignUp) */
+.auth-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+  text-align: center;
+  color: #001a42;
+  margin-bottom: 30px;
+}
+
+.divider {
+  margin: 20px 0;
+  text-align: center;
+  color: #666;
+  position: relative;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.divider:before {
+  left: 0;
+}
+
+.divider:after {
+  right: 0;
+}
+
+.auth-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #7747e3;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+} 

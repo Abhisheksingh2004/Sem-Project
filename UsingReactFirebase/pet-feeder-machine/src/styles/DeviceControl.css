@@ -1,0 +1,359 @@
+/* Device Control Panel styles */
+.control-section {
+  margin-top: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.control-header {
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #001a42;
+}
+
+/* Touch Control Section */
+.touch-control-section {
+  background-color: #f8f8ff;
+}
+
+.touch-control-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.touch-description {
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.touch-control-button {
+  min-width: 100px;
+}
+
+/* Timer Control Section */
+.timer-control-section {
+  background-color: #f0f8ff;
+}
+
+.timer-control-container {
+  margin-bottom: 15px;
+}
+
+.timer-description {
+  margin: 0 0 15px 0;
+}
+
+.timer-control-row {
+  display: flex;
+  gap: 10px;
+}
+
+.timer-input {
+  width: 80px;
+}
+
+.timer-active-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #d0e0f0;
+}
+
+.timer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #001a42;
+  margin: 0 0 10px 0;
+}
+
+.timer-countdown {
+  margin-top: 10px;
+  background: #001a42;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Schedule Control Section */
+.schedule-control-section {
+  background-color: #f0fff0;
+}
+
+.schedule-description {
+  margin: 0 0 15px 0;
+}
+
+.schedule-form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #d0f0d0;
+}
+
+.schedule-form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.day-select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.time-input-container {
+  display: flex;
+  flex: 1;
+  gap: 5px;
+}
+
+.time-input-hidden {
+  display: none;
+}
+
+.hour-select {
+  flex: 2;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.ampm-select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 70px;
+}
+
+.hour-select:focus,
+.ampm-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.duration-input {
+  width: 140px;
+}
+
+.duration-input::placeholder {
+  color: #888;
+}
+
+.duration-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.duration-input:invalid {
+  border-color: #dc3545;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.duration-help {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.schedules-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-item.disabled {
+  background-color: #f5f5f5;
+  opacity: 0.7;
+}
+
+.schedule-day {
+  margin: 0;
+  font-weight: bold;
+}
+
+.schedule-time {
+  margin: 0;
+  color: #666;
+}
+
+.schedule-duration {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.schedule-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-button {
+  min-width: 70px;
+}
+
+.delete-button {
+  color: red;
+}
+
+.empty-schedule {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  background-color: white;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+}
+
+/* History Section */
+.history-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.history-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .control-section {
+    padding: 15px;
+  }
+  
+  .touch-control-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .touch-control-button {
+    width: 100%;
+  }
+  
+  .timer-control-row {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .timer-input {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .schedule-form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .day-select,
+  .time-input-container,
+  .duration-input,
+  .add-button {
+    width: 100%;
+    min-height: 44px;
+  }
+  
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .schedule-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .status-button {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .time-input-container {
+    width: 100%;
+  }
+  
+  .hour-select,
+  .ampm-select {
+    min-height: 44px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .control-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .control-section {
+    padding: 12px;
+    margin-top: 15px;
+  }
+  
+  .timer-active-box {
+    padding: 10px;
+  }
+  
+  .timer-countdown {
+    font-size: 18px;
+  }
+  
+  .schedule-form {
+    padding: 10px;
+  }
+  
+  .duration-help {
+    margin-bottom: 5px;
+  }
+} 
